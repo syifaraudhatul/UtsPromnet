@@ -1,0 +1,144 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navigasi {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+.logo{
+    font-size: 20px;
+    float: left;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    padding: 0 25px;
+    font-weight: 700px;  
+}
+.menu{
+    float: right;
+}
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    top: 0;
+    background: white;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li{
+    float: left;
+
+}
+nav ul li a{
+    color: black;
+    text-align: center;
+    font-size: 23px;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+nav ul li a:link {
+    color: #808080;
+}
+nav ul li a:active {
+    color: #000000;
+}
+nav ul li a:hover {
+    color: #000000;
+}
+.home {
+    background: url('fotoncip.jpg') left bottom no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: flex-end;
+    height: 100vh;
+    color: white;
+}
+.home h1, p, .button {
+    text-align: left; 
+}
+h1 {
+    color: black;
+    font-size: 30px;
+    -webkit-text-stroke: 1px white;
+    margin-left: 60px;
+}
+h2 {
+    color: white;
+    font-size: 30px;
+    text-align: left; 
+    margin-left: 50px;
+}
+p {
+    color: black;
+    font-size: 30px;
+    -webkit-text-stroke: 1px white;
+    margin-left: 50px;
+}
+.button {
+    margin-top: 10px; 
+    margin-left: 50px;
+}
+.button button {
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.button a {
+    text-decoration: none;
+    border-radius: 10px;
+    color: black;
+
+}
+.about {
+    text-align: left;
+    color: black;
+}
+
+.about p {
+    color: black; /* Mengatur warna teks menjadi hitam */
+    position: relative;
+    text-align: center;
+}
+
+
+.about h1 {
+    color: black;
+    font-size: 30px; /* Mengatur ukuran teks */
+    margin-left: 20px;
+}
+
+.about p::after {
+    content: "\2191"; /* Menggunakan kode Unicode untuk tanda panah ke bawah */
+    color: black; /* Warna tanda panah */
+    position: absolute;
+    bottom: -10px; /* Menentukan posisi vertikal tanda panah */
+    left: 0; /* Menentukan posisi horizontal tanda panah */
+}
+
+.about h2 {
+    font-size: 15px;
+    color: black;
+}
