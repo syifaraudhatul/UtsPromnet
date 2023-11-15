@@ -1,144 +1,359 @@
-*{
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  .btn-about:active {
+    background-color: #fff;
+    color: white;
+    transition: all 500ms ease;
+  }
+  
+  .btn-about:hover {
+    box-shadow: 0px 4px 6px rgba(0.5, 0.5, 0.5, 0.5);
+    color: #fff;
+    transition: all 500ms ease;
+  }
+  
+  .a-home {
+    color: black;
     text-decoration: none;
-    margin: 0px;
-    padding: 0px;
-    color: black;
-    font-family: 'Montserrat', sans-serif;
-}
-body{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.navigasi {
-    width: 1100px;
-    margin: auto;
-    position: relative;
-}
-.logo{
-    font-size: 20px;
-    float: left;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-    padding: 0 25px;
-    font-weight: 700px;  
-}
-.menu{
-    float: right;
-}
-nav {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    line-height: 80px;
-    top: 0;
-    background: white;
-}
-nav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-nav ul li{
-    float: left;
-
-}
-nav ul li a{
-    color: black;
     text-align: center;
-    font-size: 23px;
-    padding: 0px 16px 0px 16px;
+    transition: all 250ms ease;
+  }
+  .a-home:active {
+    color: white;
     text-decoration: none;
-}
-nav ul li a:hover{
-    text-decoration: underline;
-}
-nav ul li a:link {
-    color: #808080;
-}
-nav ul li a:active {
-    color: #000000;
-}
-nav ul li a:hover {
-    color: #000000;
-}
-.home {
-    background: url('fotoncip.jpg') left bottom no-repeat;
+    text-align: center;
+  }
+
+  .pagehome {
+    background-image: url(fotoncip.jpg);
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
-    justify-content: flex-end;
-    height: 100vh;
-    color: white;
-}
-.home h1, p, .button {
-    text-align: left; 
-}
-h1 {
-    color: black;
-    font-size: 30px;
-    -webkit-text-stroke: 1px white;
-    margin-left: 60px;
-}
-h2 {
-    color: white;
-    font-size: 30px;
-    text-align: left; 
-    margin-left: 50px;
-}
-p {
-    color: black;
-    font-size: 30px;
-    -webkit-text-stroke: 1px white;
-    margin-left: 50px;
-}
-.button {
-    margin-top: 10px; 
-    margin-left: 50px;
-}
-.button button {
-    color: black;
-    border: 1px solid black;
-    padding: 10px 20px;
-    border-radius: 10px;
-}
-.button a {
-    text-decoration: none;
-    border-radius: 10px;
-    color: black;
+    background-position: center;
+    margin-bottom: 150px;
+    padding-left: 125px;
+  }
+  
+  .div-home {
+    width: 425px;
+  }
 
-}
-.about {
-    text-align: left;
-    color: black;
-}
-
-.about p {
-    color: black; /* Mengatur warna teks menjadi hitam */
-    position: relative;
+  .btn-home {
     text-align: center;
-}
-
-
-.about h1 {
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+    border-radius: 20px;
+    border: solid 5px black;
+    margin-bottom: 20px;
+  }
+  
+  .btn-home:active {
+    background-color: black;
+    border-color: white;
+    color: #fff;
+  }
+  
+  .btn-home:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0.5, 0.5, 0.5, 0.5);
+  }
+  
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  :root {
+    --nav-background: #fff;
+    --nav-active: #adadad;
+    --primary: #0d6efd;
+    --background: #d9e8fe;
+  }
+  
+  body {
+    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  nav {
+    display: flex;
+    background-color: var(--nav-background);
+    align-items: center;
+    height: 65px;
+    padding-left: 125px;
+    padding-right: 50px;
+    justify-content: space-between;
+    font-size: 16px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    padding: 8px;
+    font-size: 16px;
     color: black;
-    font-size: 30px; /* Mengatur ukuran teks */
-    margin-left: 20px;
-}
+    font-weight: 450;
+  }
+  nav ul li a:active {
+    color: var(--nav-active);
+  }
+  
+  section {
+  }
+  
 
-.about p::after {
-    content: "\2191"; /* Menggunakan kode Unicode untuk tanda panah ke bawah */
-    color: black; /* Warna tanda panah */
-    position: absolute;
-    bottom: -10px; /* Menentukan posisi vertikal tanda panah */
-    left: 0; /* Menentukan posisi horizontal tanda panah */
-}
+  .hi {
+    -webkit-text-stroke: 0.2px white;
+    padding-top: 225px;
+    margin-bottom: 10px;
+    font-size: 38px;
+    font-weight: 400;
+  }
+  .myname {
+    margin-bottom: 10px;
+    color: var(--nav-background);
+    font-size: 38px;
+  }
+  
+  .myprofil {
+    -webkit-text-stroke: 0.1px white;
+    margin-bottom: 10px;
+    font-size: 27px;
+    font-weight: 400;
+  }
+  
 
-.about h2 {
-    font-size: 15px;
-    color: black;
-}
+  
+  .moreinfo {
+    text-align: center;
+  }
+  
+  .pageabout {
+    margin-bottom: 50px;
+  }
+  
+  .h1-about {
+    padding-bottom: 5px;
+    font-size: 60px;
+    color: rgb(230, 228, 224);
+    padding-left: 80px;
+  }
+  
+  .div-p {
+    padding: 5px;
+    padding-right: 25px;
+    padding-left: 125px;
+  }
+  
+  .div-editor {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .editor1 {
+    width: 71rem;
+  }
+  
+  .div-editor-h2 {
+    padding: 5px;
+    font: 600;
+    font-size: 25px;
+    padding-left: 125px;
+  }
+  
+  .div-editor-p {
+    padding: 5px;
+    padding-left: 125px;
+  }
+  
+  .btn-about {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 20px;
+    color: var(--nav-background);
+    background-color: black;
+    outline: none;
+    border: solid 2px black;
+  }
+  
+  .p-editor {
+    padding: 5px;
+    padding-left: 125px;
+    padding-right: 25px;
+  }
+  
+  .div-work {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .img-work {
+    padding-right: 60px;
+  }
+  
+  .row-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 14px;
+  }
+  
+  .service1 {
+    width: 268px;
+    height: 265px;
+    margin-bottom: 16px;
+  }
+  .service2 {
+    width: 268px;
+    height: 265px;
+    margin-bottom: 16px;
+  }
+  
+  .service3 {
+    width: 547px;
+    height: 273px;
+    margin-bottom: 50px;
+  }
+  
+  .p-work {
+    justify-content: center;
+    padding: 5px;
+    padding-top: 200px;
+    padding-left: 125px;
+    padding-right: 50px;
+    align-items: center;
+  }
+  
+  .h1-contact {
+    padding-bottom: 5px;
+    font-size: 60px;
+    color: rgb(230, 228, 224);
+    padding-left: 80px;
+  }
+  
+  .div-contact {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .contact-row {
+    width: 500px;
+    padding-left: 125px;
+  }
+  
+  .contact-form {
+    grid-row: auto;
+    align-items: center;
+    border: solid 2px black;
+    margin-left: 85px;
+    margin-bottom: 52px;
+    width: 457px;
+    height: 400px;
+  }
+
+  .p-contact {
+    padding-top: 50px;
+  }
+  
+  .contact-icon {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .form {
+    display: grid;
+    margin: 30px;
+    margin-top: 60px;
+  }
+  
+  .btn-form {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 20px;
+    color: var(--nav-background);
+    background-color: black;
+    outline: none;
+    border: solid 2px black;
+  }
+  
+  .btn-form:active {
+    background-color: #fff;
+    color: white;
+    transition: all 500ms ease;
+  }
+  .btn-form:hover {
+    box-shadow: 0px 4px 6px rgba(0.5, 0.5, 0.5, 0.5);
+    color: #fff;
+    transition: all 500ms ease;
+  }
+  
+  .btn {
+    text-align: center;
+  }
+  
+  span {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    width: auto;
+    height: 10px;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: solid 2px var(--nav-active);
+    margin-bottom: 20px;
+  }
+  
+  input:focus {
+    border: solid 1px var(--primary);
+    box-shadow: 5px 5px 2px var(--background), -5px -5px 2px var(--background), 5px -5px 2px var(--background), -5px 5px 2px var(--background);
+  }
+  
+
+  
+  .icon1 {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .p-icon {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    font-size: 12px;
+    padding-right: 10px;
+  }
+  
+  svg {
+    padding: 5px;
+    width: 40px;
+  }
